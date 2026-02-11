@@ -28,13 +28,13 @@ char *get_next_line(int fd);
 Compile the project with your own `main.c` file:
 
 ```bash
-gcc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c main.c -o gnl
+gcc -Wall -Wextra -Werror -DBUFFER_SIZE=42 get_next_line.c get_next_line_utils.c main.c -o gnl
 ```
 
 You can change the `BUFFER_SIZE` value to any positive integer:
 
 ```bash
-gcc -Wall -Wextra -Werror -D BUFFER_SIZE=1024 get_next_line.c get_next_line_utils.c main.c -o gnl
+gcc -Wall -Wextra -Werror -DBUFFER_SIZE=1024 get_next_line.c get_next_line_utils.c main.c -o gnl
 ```
 
 ## Usage Example
